@@ -1,7 +1,8 @@
 import { app } from "./app";
+import { parsedEnv } from "./configs";
 
-const port = process.env.PORT || 3000;
+parsedEnv?.JWT_SECRET;
 
-app.listen(port, () => {
-   console.log(`API sucessfully started at port ${port}`);
-});
+const PORT = 3000;
+
+app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));

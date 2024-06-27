@@ -1,0 +1,1 @@
+export { hashPassword } from "./hashPassowrd.utils";
